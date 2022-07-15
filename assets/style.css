@@ -190,7 +190,7 @@ h2 {
 .projects-imgs:hover {
     width: 343px;
     height: 200px;
-    transition: all .15s linear;
+    transition: all .2s ease-in-out;
 }
 
 .large-img {
@@ -207,7 +207,7 @@ h2 {
 .large-img:hover {
     height: 375px;
     width: 625px;
-    transition: all .15s linear;
+    transition: all .2s ease-in-out;
 }
 
 .works-description {
@@ -251,10 +251,24 @@ h2 {
 
 .works-desc-pair p {
     padding: .25em;
+    margin-right: .1em;
+    height: 20px;
+    text-indent: 0;
+    margin-right: .5em;
 }
 
 .works-desc-pair a {
-    color: #45518d;
+    color: inherit;
+    text-decoration: none;
+    display: inherit;
+    justify-content: row;
+    align-items: center;
+}
+
+.vl {
+    background-color: white;
+    width: 50vw;
+    height: 1px;
 }
 
 @media only screen and (max-width: 932px) {
