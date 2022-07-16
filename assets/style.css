@@ -123,7 +123,7 @@ h2 {
 
 #photo-container {
     background-color: black;
-    background-image: url('../images/selfie.jpg');
+    background-image: url('../images/me.png');
     background-size: cover;
     background-position: center center;
     width: 325px;
@@ -328,7 +328,7 @@ h2 {
     }
 
     #socials a {
-        transform: scale(.75);
+        transform: scale(.5);
         margin: 0em .25em 0em .25em;
     }
 }
