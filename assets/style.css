@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    position: relative;
 }
 
 #dark {
@@ -41,7 +42,7 @@ h2 {
 .navbar {
     padding: 1em;
     height: 30px;
-    width: 60vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +94,7 @@ h2 {
     transform: scale(1.25);
 }
 
-.drop-down {
+.drop-down-btn {
     display: none;
     width: 30px;
     height: 30px;
@@ -154,6 +155,11 @@ h2 {
     justify-content: center;
     align-items: center;
     animation: .4s ease-in slideUp;
+}
+
+.drop-down,
+.drop-down a {
+    display: none;
 }
 
 @keyframes slideUp {
@@ -273,19 +279,73 @@ h2 {
 
 @media only screen and (max-width: 932px) {
     .navbar {
-        width: 80vw;
+        padding: 2em;
+        width: 90vw;
+        max-width: 100%;
     }
 
     .links-a {
         display: none;
     }
 
-    .drop-down {
+    .drop-down-btn {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        border: none;
+        border-radius: 10px;
+        margin-right: 2em;
+    }
+
+    .drop-down-btn i {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .drop-down {
+        width: 100vw;
+        max-width: 100%;
+        height: 100px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: sticky;
+        top: 5.9em;
+        right: 0;
+        background: inherit;
+        padding: .5em;
+        opacity: .92;
+    }
+
+    .drop-down a {
+        padding: .2em;
+        display: flex;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 10vw;
     }
 
     #socials a {
         transform: scale(.75);
         margin: 0em .25em 0em .25em;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .large-img {
+        height: 200px;
+        width: 325px;
+    }
+    
+    .large-img:hover {
+        height: 375px;
+        width: 350px;
+    }
+
+    .works-description {
+        height: 200px;
+        width: 325px;
     }
 }
